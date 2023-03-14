@@ -6,7 +6,8 @@ plugins {
 sourceCompatibility = JavaVersion.VERSION_17
 targetCompatibility = JavaVersion.VERSION_17
 
-archivesBaseName = project.archives_base_name
+// Add minecraft version to the build jar name
+archivesBaseName = project.archives_base_name + '-' + project.minecraft_version
 version = project.mod_version
 group = project.maven_group
 
@@ -35,8 +36,8 @@ dependencies {
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 
 	// Add MixinExtras
-	include implementation("com.github.LlamaLad7:MixinExtras:0.2.0-beta.4")
-	include annotationProcessor("com.github.LlamaLad7:MixinExtras:0.2.0-beta.4")
+	include implementation("com.github.LlamaLad7:MixinExtras:${project.mixinextras_version}")
+	include annotationProcessor("com.github.LlamaLad7:MixinExtras:${project.mixinextras_version}")
 }
 
 processResources {
