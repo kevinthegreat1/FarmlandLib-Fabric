@@ -1,6 +1,7 @@
 # Farmland Lib
 
-Makes adding custom farmland blocks much easier. With this library you only need to add the `c:farmlands` tag to your farmland block and it will function as a normal farmland block in game.
+Makes adding custom farmland blocks much easier. With this library you only need to add the `c:farmlands` tag to your farmland block and it will function as a normal farmland block in game.  
+Currently works on 1.19.3 and 1.19.4
 
 ## Usage
 
