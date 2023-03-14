@@ -19,6 +19,9 @@
 
   "environment": "*",
   "entrypoints": {
+    "preLaunch": [
+      "com.kevinthegreat.farmlandlib.FarmlandLib"
+    ],
     "main": [
       "com.kevinthegreat.farmlandlib.FarmlandLib"
     ]
