@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "farmlandlib",
+  "version": "${version}",
+
+  "name": "Farmland Lib",
+  "description": "Makes adding custom farmland easier",
+  "authors": [
+    "Kevinthegreat"
+  ],
+  "contact": {
+    "homepage": "https://github.com/kevinthegreat1/FarmlandLib-Fabric",
+    "sources": "https://github.com/kevinthegreat1/FarmlandLib-Fabric",
+    "issues": "https://github.com/kevinthegreat1/FarmlandLib-Fabric/issues"
+  },
+
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/farmlandlib/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.kevinthegreat.farmlandlib.FarmlandLib"
+    ]
+  },
+  "mixins": [
+    "farmlandlib.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
