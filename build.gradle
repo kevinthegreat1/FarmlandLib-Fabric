@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.1-SNAPSHOT'
+	id 'fabric-loom' version '1.2-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -36,8 +36,7 @@ dependencies {
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 
 	// Add MixinExtras
-	include implementation("com.github.LlamaLad7:MixinExtras:${project.mixinextras_version}")
-	include annotationProcessor("com.github.LlamaLad7:MixinExtras:${project.mixinextras_version}")
+	include(implementation(annotationProcessor("com.github.LlamaLad7:MixinExtras:${project.mixinextras_version}")))
 }
 
 processResources {
