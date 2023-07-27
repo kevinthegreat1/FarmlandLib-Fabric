@@ -14,6 +14,6 @@ import org.spongepowered.asm.mixin.injection.At;
 public abstract class SecondaryPointsOfInterestSensorMixin {
     @ModifyExpressionValue(method = "sense", at = @At(value = "INVOKE", target = "Lcom/google/common/collect/ImmutableSet;contains(Ljava/lang/Object;)Z"))
     private boolean farmlandlib$isFarmland(boolean original, ServerWorld world, VillagerEntity villagerEntity, @Local(ordinal = 1) BlockPos pos){
-        return original || (villagerEntity.getVillagerData().getProfession().id().equals("farmer") && world.getBlockState(pos).isIn(FarmlandTag.FARMLAND));
+        return original || villagerEntity.getVillagerData().getProfession().id().equals("farmer") && world.getBlockState(pos).isIn(FarmlandTag.FARMLAND);
     }
 }
